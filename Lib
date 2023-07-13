@@ -315,7 +315,7 @@ local function MakeUi(applicationName, name, info, discordInvite)
         KeySystemUI.Closed = true
         CloseGUI()
     end)
-    
+
     clear.MouseButton1Click:Connect(function()
         KeySystemUI.Closed = true
         CloseGUI()
@@ -359,7 +359,7 @@ local function MakeUi(applicationName, name, info, discordInvite)
             warn(error_file)
         end
         if text_box.Text ~= "Checking saved key..." then
-            task.delay(2, function()
+            task.delay(1, function()
                 text_box.Text = ""
             end)
         else
