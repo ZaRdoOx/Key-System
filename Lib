@@ -384,7 +384,7 @@ local function MakeUi(applicationName, name, info, discordInvite)
     get_key.MouseButton1Click:Connect(function()
         local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
         text_box.Text = "Key Link copied !"
-        setclipboard("https://kys.rblxscripts.fun/getkey/PlatiniumHub?hwid="..HWID:gsub("-"," "):gsub(" ",""))
+        KeySystem:copyGetKeyURL()
     end)
 end
 
