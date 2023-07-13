@@ -375,8 +375,10 @@ local function MakeUi(applicationName, name, info, discordInvite)
     end)
 
     get_key.MouseButton1Click:Connect(function()
-        text_box.Text = KeySystem:getKeyURL()
-        KeySystem:copyGetKeyURL()
+        local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+        text_label_2.Text = "The Key Link Is Copied, Paste It In Your Web Browser!"
+        text_box.Text = "The Key Link Is Copied!"
+        setclipboard("https://kys.rblxscripts.fun/getkey/PlatiniumHub?hwid="..HWID:gsub("-"," "):gsub(" ",""))
     end)
 end
 
@@ -394,3 +396,5 @@ function KeySystemUI.New(settings)
 end
 
 return KeySystemUI
+
+print("UI by mr.xrer | Code by mstudio45")
