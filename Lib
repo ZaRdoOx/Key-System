@@ -311,7 +311,8 @@ local function MakeUi(applicationName, name, info, discordInvite)
     end
 
     close_btn.MouseButton1Click:Connect(function()
-        KeySystemUI.Closed = true;CloseGUI()
+        KeySystemUI.Closed = true
+        CloseGUI()
     end)
 
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/setup.lua"))()
