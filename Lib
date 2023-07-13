@@ -18,6 +18,8 @@
             end
 --]]
 
+print("UI by mr.xrer | Code by mstudio45")
+
 local KeySystemUI = { Closed = false }
 local UIMade = false;
 
@@ -396,5 +398,3 @@ function KeySystemUI.New(settings)
 end
 
 return KeySystemUI
-
-print("UI by mr.xrer | Code by mstudio45")
